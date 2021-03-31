@@ -1,0 +1,55 @@
+{
+  "name": "chatsystem",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "socket.io": "^4.0.0",
+    "socket.io-client": "^4.0.0",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "start-all-dev": "concurrently --kill-others \"npm run start-client\" \"npm run start-server\"",
+    "start-client": "react-scripts start",
+    "build-client": "react-scripts build",
+    "test-client": "react-scripts test",
+    "eject-client": "react-scripts eject",
+    "start-server": "node server.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ch713/ChatSystem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ch713/ChatSystem/issues"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
